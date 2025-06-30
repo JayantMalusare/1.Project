@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+header {
+  background: #1a1a2e;
+  padding: 15px 0;
+}
+
+.navbar {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #00f2fe;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.logo span {
+  color: #ff4c60;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #ffeb3b;
+  border-bottom: 2px solid #ffeb3b;
+}
+
+.hero {
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-img {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: #fff;
+  color: #764ba2;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.about, .skills, .projects, .contact {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.skill-bars {
+  margin-top: 30px;
+}
+
+.skill {
+  margin-bottom: 15px;
+  text-align: left;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.skill label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.bar {
+  background-color: #00bcd4;
+  height: 20px;
+  color: #fff;
+  padding-left: 10px;
+  border-radius: 5px;
+  line-height: 20px;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.project-card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.project-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #1a1a2e;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
